@@ -76,7 +76,14 @@ ws.freeze_panes = 'A2'
 # 筛选
 ws.auto_filter.ref = f'A1:G{len(data)+1}'
 
-out = os.path.join(SCRIPT_DIR, '1688待收货物流.xlsx')
+# 默认输出到 D:\1688物流轨迹查询（用户指定目录）
+DEFAULT_OUTPUT_DIR = r'D:\1688物流轨迹查询'
+out_dir = DEFAULT_OUTPUT_DIR
+
+# 若用户在当前目录留了 orders_data.json，则就近输出（兼容旧习惯）
+# 这里统一走默认目录
+filename = '1688待收货物流.xlsx'
+out = os.path.join(out_dir, filename)
 wb.save(out)
 print(f'✅ Excel 已保存: {out}')
 print(f'   共 {len(data)} 行数据')

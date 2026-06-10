@@ -58,7 +58,7 @@ python <skill-dir>/scripts/page_loop.py --session <当前session名>
 ```bash
 python <skill-dir>/scripts/gen_excel.py
 ```
-- 输出：`<skill-dir>/scripts/1688待收货物流.xlsx`
+- 输出：`D:\1688物流轨迹查询\1688待收货物流.xlsx`
 - 包含 7 列：序号、采购订单号、订单状态、物流名称、物流单号、物流更新时间、最新物流轨迹
 
 ### 5. 告知用户文件位置
@@ -110,4 +110,4 @@ python <skill-dir>/scripts/gen_excel.py
 如需重抓：
 1. 重新执行步骤 2-4
 2. `orders_data.json` 会被覆盖
-3. `1688待收货物流.xlsx` 会被覆盖
+3. `D:\1688物流轨迹查询\1688待收货物流.xlsx` 会被覆盖
