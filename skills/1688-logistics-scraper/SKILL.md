@@ -75,7 +75,8 @@ python <skill-dir>/scripts/gen_excel.py
 | `scripts/extract_one_page.js` | 单页订单提取（核心） |
 | `scripts/click_next.js` | 点击下一页按钮 |
 | `scripts/page_loop.py` | 27 页循环抓取 |
-| `scripts/gen_excel.py` | 生成 Excel 表格 |
+| `scripts/gen_excel.py` | 生成 Excel 表格（默认输出到 `D:\1688物流轨迹查询\`） |
+| `scripts/bug_check.py` | BUG 体检脚本（订单号/状态/时间/单号/一致性） |
 | `references/operations.md` | 1688 技术细节（DOM 结构、正则、状态规则） |
 | `references/excel-format.md` | Excel 格式规范 |
 
